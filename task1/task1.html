@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML标签练习（语义化）</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div>
+        <h1>网站一级标题</h1>
+        <div>
+            <ul>
+                <li> <a href="#"> 导航链接一 </a></li>
+                <li><a href="#">导航链接二</a></li>
+                <li><a href="#">导航链接三</a></li>
+                <li><a href="#">导航链接四</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h2> 文章一级标题</h2>
+            <h3> 文章二级标题</h3>
+            <div>
+                <span> 文章作者</span>
+                <span> 文章发表时间  </span>
+            </div>
+            <p> 这是第一段，
+                <acronym title="World Wide Web Consortium">W3C</acronym>。这是第一段，很长很长。这是第一段，很长很长。这是第一段，很长很长。</p>
+            <p> 这是第一段，很长很长。<a href="http://ife.baidu.com/" title="ife主页" target="_blank"> ife主页</a>，很长很长。这是第一段，很长很长。这是第一段，很长很长。</p>
+            <img src="http://mp.weixin.qq.com/mp/qrcode?scene=10000004&size=102&__biz=MzA4MjUyNjY3Nw==" alt="微信二维码" />
+            <p> 这里有些列表
+                <br/>
+                <ul>
+                    <li> 列表项目一</li>
+                    <li> 列表项目二</li>
+                    <li> 列表项目三</li>
+                </ul>
+            </p>
+        </div>
+        <div>
+            <h2> 文章一级标题</h2>
+            <h3> 文章二级标题</h3>
+            <div>
+                <span> 文章作者</span>
+                <span> 文章发表时间  </span>
+            </div>
+            <dl>
+                <dt>微信二维码</dt>
+                <dd><img src="http://mp.weixin.qq.com/mp/qrcode?scene=10000004&size=102&__biz=MzA4MjUyNjY3Nw==" alt="微信二维码" /></dd>
+                <dt>微信二维码1</dt>
+                <dd><img src="http://mp.weixin.qq.com/mp/qrcode?scene=10000004&size=102&__biz=MzA4MjUyNjY3Nw==" alt="微信二维码" /></dd>
+            </dl>
+            <figure>
+                <figcaption>这是一只可爱的猫</figcaption>
+                <img src="fig1.jpg" width="350" height="334" />
+                <figcaption>这是一只可爱的猫</figcaption>
+                <img src="fig1.jpg" width="350" height="334" />
+                <figcaption>这是一只可爱的猫</figcaption>
+                <img src="fig1.jpg" width="350" height="334" />
+            </figure>
+        </div>
+        <div>
+            <h2> 图片 </h2>
+            <div>微信二维码</div>
+            <div><img src="http://mp.weixin.qq.com/mp/qrcode?scene=10000004&size=102&__biz=MzA4MjUyNjY3Nw==" alt="微信二维码" /></div>
+            <ol>
+                <li> 排名一</li>
+                <li> 排名二</li>
+                <li> 排名三</li>
+            </ol>
+            <table border="1" cellpadding="10" cellspacing="5">
+                <caption> 表格标题 </caption>
+                <thead>
+                    <tr>
+                        <th> 表头1</th>
+                        <th> 表头2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 内容1</td>
+                        <td> 内容2</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2" align="center"> 尾部 </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div>
+        <h2> 侧栏标题 </h2>
+        <aside>
+            <h4> 注册窗口标题</h4>
+            <form>
+                <label> 请输入邮箱地址：
+                    <input type="text" placeholder="文本框输入" /> </label>
+                <div> 格式按要求进行 </div>
+                <div> <span> 请输入密码： <input type="text" placeholder="文本框输入"/> </span>
+                    <span> 请重复输入密码： <input type="text" placeholder="文本框输入"/> </span> </div>
+                <div> 格式按要求进行 </div>
+                <div> <span>性别： <input type="radio" value="男" checked="">男
+	     		 <input type="radio" value="女">女 </span>
+                    <span>
+                    城市：
+                    <select>
+                        <option> 北京</option>
+                        <option selected=""> 上海</option>
+                    </select>
+                    </span>
+                    <span>
+                    爱好： 
+	     		 	<label><input type="checkbox">运动</label>
+	     		 	<input type="checkbox">艺术
+	     		 	<input type="checkbox" checked="">科学
+	     		 </span>
+                    <label>个人描述：
+                        <textarea placeholder="多行输入"> </textarea>
+                    </label>
+                    <input type="button" value="确认提交">
+                </div>
+            </form>
+    </div>
+    </aside>
+    <div> 版权所有 &copy;</div>
+</body>
+
+</html>
