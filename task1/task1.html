@@ -9,7 +9,7 @@
 
 <body>
     <header>
-        <h1>网站一级标题</h1>
+        <h1>我的布局练习</h1>
         <nav>
             <ul>
                 <li><a href="#">导航链接四</a></li>
@@ -106,46 +106,47 @@
         <h2> 侧栏标题 </h2>
         <h4> 注册窗口标题</h4>
         <form>
-            <label> 请输入邮箱地址：
-                <input type="text" placeholder="文本框输入" />
-            </label>
-            <p> 格式按要求进行 </p> 
-            <label> 请输入密码：
-                <input type="text" placeholder="文本框输入" />
-            </label>
-            <label> 请重复输入密码：
-                <input type="text" placeholder="文本框输入" />
-            </label>
-            <p> 格式按要求进行 </p> 
-            <label>性别：
-                <label>
-                    <input type="radio" name="sex" value="男" checked="">男
+            <div>
+                <label> <span class="item"> 请输入邮箱地址：</span>
+                    <input type="text" placeholder="文本框输入" />
                 </label>
-                <label>
-                    <input type="radio" name="sex" value="女">女
+                <div class="desc"> 格式按要求进行 </div>
+                <label> <span class="item"> 请输入密码：</span>
+                    <input type="text" placeholder="文本框输入" />
                 </label>
-            </label>
-            <label>
-                城市：
-                <select>
-                    <option> 北京</option>
-                    <option selected=""> 上海</option>
-                </select>
-            </label>
-            <label>
-                爱好：
-                <label>
-                    <input type="checkbox">运动</label>
-                <label>
-                    <input type="checkbox">艺术 </label>
-                <label>
-                    <input type="checkbox" checked="">科学
+                <label> <span class="item"> 请重复输入密码：</span>
+                    <input type="text" placeholder="文本框输入" />
                 </label>
-            </label>
-            <label>个人描述：
-                <textarea placeholder="多行输入"> </textarea>
-            </label>
-            <input type="button" value="确认提交">
+                <div class="desc"> 格式按要求进行 </div>
+                <label> <span class="item">性别：</span>
+                    <label>
+                        <input type="radio" name="sex" value="男" checked="">男
+                    </label>
+                    <label>
+                        <input type="radio" name="sex" value="女">女
+                    </label>
+                </label>
+                <label> <span class="item"> 城市：</span>
+                    <select>
+                        <option> 北京</option>
+                        <option selected=""> 上海</option>
+                    </select>
+                </label>
+                <label> <span class="item">爱好：</span>
+                    <label>
+                        <input type="checkbox">运动</label>
+                    <label>
+                        <input type="checkbox">艺术 </label>
+                    <label>
+                        <input type="checkbox" checked="">科学
+                    </label>
+                </label>
+                <label> <span class="item">个人描述：</span>
+                    <textarea placeholder="多行输入"> </textarea>
+                </label>
+                </label>
+            </div>
+            <input type="button" id="submit" value="确认提交">
         </form>
     </aside>
     <footer> 版权所有 &copy;</footer>

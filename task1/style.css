@@ -80,16 +80,36 @@ article tfoot{
 aside {
 	margin-top: 40px;
 }
-
-aside h4, aside form {
-	text-align: center;
-}
  
-form > label {
+form{
+	line-height: 40px;
+} 
+form > div{
+	margin: 30px 0 10px 400px;
+}
+
+form div> label {
 	display: block;
 }
 
-form input[type="button"]{
+.item {
+	text-align: right;
+    width: 130px;
+    display: inline-block;
+}
+
+.desc {
+	margin-left: 130px;
+	color: grey;
+}
+
+textarea {
+	vertical-align: top;
+	width: 500px;
+	height: 100px;
+}
+
+#submit {
 	width: 100%;
     padding: 8px;
     color: #FFF;
