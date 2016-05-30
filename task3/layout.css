@@ -1,0 +1,57 @@
+body {
+	min-width: 600px;
+}
+
+.content, .left, .middle, .right{
+	border: 1px solid #999;
+	padding: 20px;
+}
+
+.content {
+	background-color: #eee; 
+} 
+
+.left, .middle, .right {
+	box-sizing: border-box; 
+	background-color: #FFF;
+}
+
+.left {
+	width: 200px;
+	float: left;
+}
+
+.left img {
+	width: 80px; 
+	vertical-align: top;
+}
+
+.left span{
+    padding-left: 5px;
+}
+
+.right {
+	width: 120px;
+	float: right;
+}
+
+.right img{
+	width:80px;
+}
+.right img:not(:last-child){
+	margin-bottom: 20px;
+}
+
+figure{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+.middle {
+	margin: 0 140px 0 220px;
+}
+
+.clearfix {
+	clear: both;
+}
