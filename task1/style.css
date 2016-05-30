@@ -6,11 +6,14 @@ html, body , h1, nav, div,nav ul{
 
 body{
 	background-color:rgba(128, 128, 128, 0.2); 
+	font-family:"Microsoft YaHei";
 }
  
 p{
 	text-indent: 2em;
 }
+
+/*头部 尾部样式*/
 header, footer {
 	margin-top: 0;
 	height: 60px;
@@ -19,13 +22,28 @@ header, footer {
 	color: #FFF;
 }
 
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+main {
+	margin-top: 80px;
+}
+
 h1 { 
 	margin-left: 30px;
 	float: left;
 }
 
-nav li{
+nav{
 	float: right;
+}
+
+nav li{
+	float: left;
 	margin-right: 30px;
 }
 
@@ -34,7 +52,7 @@ nav li a{
 	color: #FFF;
 
 }
-
+/*主体*/
 article, aside{
 	margin: 20px;
 	padding: 20px 15px;
@@ -43,6 +61,7 @@ article, aside{
 
 article li {
 	text-decoration: none;
+	list-style-type: none;
 }
 
 article figure {
@@ -77,6 +96,7 @@ article tfoot{
 	background-color: #e4e4e4;
 }
 
+/*侧栏*/
 aside {
 	margin-top: 40px;
 }
@@ -90,7 +110,7 @@ form{
 	line-height: 40px;
 } 
 form > div{
-	margin: 30px 0 10px 400px;
+	margin: 30px 0 10px;
 }
 
 form div> label {
@@ -99,12 +119,12 @@ form div> label {
 
 .item {
 	text-align: right;
-    width: 130px;
+    width: 40%;
     display: inline-block;
 }
 
 .desc {
-	margin-left: 130px;
+	margin-left: 40%;
 	color: grey;
 }
 
@@ -116,13 +136,14 @@ textarea {
 
 #submit {
 	width: 100%;
-    padding: 8px;
+    padding: 10px;
     color: #FFF;
     font-weight: bold;
     background-color: #056DE8;
     border-radius: 9px;
 } 
 
+/*底部*/
 footer {
 	text-align: center;
 }
