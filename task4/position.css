@@ -43,22 +43,28 @@ html, body {
 	position: relative;
 	height: 200px;
 	width: 400px; 
-	background-color: #ccc;
+	background-color: #acc;
 	overflow: hidden;
 }
 
+/*  table 定位 */
 #parent_table {
 	display: table;
+	height: 100%;
+    width: 100%;
+}
+
+#content_table {
+	display: table-cell;
+	vertical-align: middle;
 }
 
 #container_table {
 	position: relative;
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
 	height: 200px;
 	width: 400px; 
-	background-color: #ccc;
+	margin: 0 auto;
+	background-color: #cac;
 	overflow: hidden;
 }
 

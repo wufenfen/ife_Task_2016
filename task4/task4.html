@@ -25,10 +25,12 @@
 	    </div>
     </div>
     <div id="parent_table">
-	    <div id="container_table">
-	        <div class="angle angle_table"></div>
-	        <div class="angle angle_table"></div>
-	    </div>
+    	<div id="content_table">
+		    <div id="container_table">
+		        <div class="angle angle_table"></div>
+		        <div class="angle angle_table"></div>
+		    </div>
+    	</div>
 	 </div>
 </body>
 <script>
@@ -37,8 +39,8 @@
 
 	document.addEventListener("DOMContentLoaded", function(event) {
 	    posEle = document.getElementById("container_position");
-	    flexEle = document.getElementById("container_flex");
-	    tableEle = document.getElementById("container_table");
+	    flexEle = document.getElementById("parent_flex");
+	    tableEle = document.getElementById("parent_table");
 	    descEle = document.getElementById("desc");
 	    toggle(2); //默认position布局
 	});
@@ -52,14 +54,14 @@
         }
         else if (type == 2) {
             posEle.style.display = "none";
-            flexEle.style.display = "block";
+            flexEle.style.display = "flex";
             tableEle.style.display = "none";
             descEle.innerText = "flex定位";
         }
         else if (type == 3) {
             posEle.style.display = "none";
             flexEle.style.display = "none";
-            tableEle.style.display = "block";
+            tableEle.style.display = "table";
             descEle.innerText = "table定位";
         }
     }
