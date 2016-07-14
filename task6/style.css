@@ -1,5 +1,15 @@
-body, h1, h2 {
+body {
+	background-color: black;
+}
+
+body, h1, h2, h3 {
 	margin: 0;
+}
+
+p {
+
+	word-break: break-all;
+	word-wrap: break-word;
 }
 
 .container{
@@ -8,6 +18,7 @@ body, h1, h2 {
 	margin: 0 auto;
 	padding: 0 44px;
 	box-sizing: border-box;
+	background-color: white;
 }
 
 .top{
@@ -26,7 +37,6 @@ body, h1, h2 {
 	width: 110px;
 	height: 100%;
 	position: absolute;
-    z-index: -1;
 	background-color: #d65874;	
 }
 
@@ -34,6 +44,8 @@ body, h1, h2 {
 	width: 110px;
 	text-align: center;
 	color: #ffffff; 
+	position: relative;
+    z-index: 2;
 }
 
 header {
@@ -67,9 +79,10 @@ header {
 }
 
 h1 {
-	font: 24px/34px 'Microsoft YaHei';
+	font: 24px/34px '微软雅黑';
 	text-decoration: underline;
 	text-transform: capitalize;
+	font-variant: small-caps;
 }
 
 h2 {
@@ -78,14 +91,14 @@ h2 {
 }
 
 .num {
-	font: 116px 'Microsoft YaHei';
+	font: 116px '微软雅黑';
 	text-decoration: underline;
 	color: #75b86b;
 	font-style: italic;
 }
 
 .desc {
-	font-family:  'Microsoft YaHei';
+	font-family:  '微软雅黑';
 	font-size: 55px;
 	color: #cc8091;
 }
@@ -106,8 +119,6 @@ h2 {
 nav{
 	margin-top: 40px;
 	margin-right: 250px;
-	word-break: break-all;
-	word-wrap: break-word;
 	overflow: hidden;
 }
 
@@ -129,7 +140,7 @@ nav .middle {
 }
 
 nav .title{
-	font-family: 'Microsoft YaHei';
+	font-family: '微软雅黑';
 	font-size: 16px;
 	text-decoration: underline;
 	font-weight: bold;
@@ -144,8 +155,192 @@ nav .how {
 	color: #cc7680;
 }
 
-nav p {
+.content {
 	font-size: 12px;
 	line-height: 16px;
 	opacity: 0.7;
+}
+
+main {
+	height: 630px;
+	margin: 50px 0 20px;
+	overflow: hidden;
+}
+
+main .left{
+	float: left;
+	width: 415px;
+}
+
+main .right{
+	float: right;
+	width: 458px;
+}
+
+article .image {
+	position: relative;
+	height: 275px;
+}
+article p {
+	text-indent: 2em;
+}
+
+h3 {
+	font-size: 42px;
+	color: #11456b;
+	font-weight: bold;
+	line-height: 58px;
+	border-bottom: 2px solid black;
+	word-break: normal;
+}
+
+h3 span:first-child{
+	font-size: 72px;
+	color: #f5e327;
+	font-style: italic;
+}
+
+h3 span:last-child{
+	font-size: 33px;
+	color: #11456b;
+}
+
+img.surround {
+	float: right;
+	height: 100%;
+}
+
+p.first{
+	text-indent: 0;
+}
+
+p.first::first-letter {
+	float: left;
+	font-size: 70px;
+	color: #f5e327;
+	line-height: 70px;
+	font-family: '微软雅黑';
+	margin:0 4px 4px 0;
+}
+
+.shadow-bar {
+    height: 61px;
+    width: 100%;	
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.7;
+    background-color: grey;
+}
+
+.content-bar {
+    position: absolute;
+	bottom: 0;
+	z-index: 10;
+    margin: 8px 40px;
+    padding: 4px 10px;
+	border-left: 3px solid #72b16a;
+}
+
+.content-bar .big {
+	color: white;
+	font-size: 26px;
+	font-family: '微软雅黑';
+} 
+
+.content-bar .small {
+	color: #72b16a;
+	font-size: 12px;
+	line-height: 240%;
+	font-style: italic;
+	font-family: '微软雅黑';
+} 
+
+.nav {
+	margin-top: 30px;
+	height: 330px;
+	position: relative;
+	background-color: hsla(71, 54%, 84%, 0.85);
+}
+
+.nav .item {
+	padding: 20px 0;
+	font: 16px/36px "SongTi";
+	color: #5a5b5b;
+}
+
+.nav .desc {
+	font: 14px/30px '微软雅黑';
+	color: #5a5b5b;
+	font-style: italic;
+	position: relative;
+}
+
+.nav .desc span {
+	font-size: 72px;
+	color: #d45d5c;
+	font-family: "黑体";
+	position: absolute;
+}
+
+#start {
+    top: 20px;
+    left: -75px;
+}
+
+#end {
+	bottom:0;
+	right: 32px;
+}
+
+.nav .last {
+	position: absolute;
+	bottom: 0;
+	height: 170px;
+	width: 100%;
+}
+
+.last .red,.last .desc{
+	float: left;
+}
+
+.last .red{
+ 	width: 260px;
+ 	background-color: #da0303;
+    height: 160px;
+    color: white;
+    padding: 20px 10px;
+ }
+
+.last .desc{
+ 	width: 148px;
+ 	padding: 8px;
+ }
+
+.red .leftt{
+	font-size: 110px;
+	float: left;
+	padding: 4px;
+	line-height: 130px;
+}
+ .red .rightt{
+ 	width: 160px;
+ 	height: 130px;
+ 	border-left: 2px solid white;
+	float: left;
+	padding-left: 14px;	
+ }
+
+.rightt .big{
+	font-size: 21px;
+	line-height: 40px;
+	font-style: italic;
+	font-family:  '微软雅黑';
+}
+
+.footer {
+	border-top: 1px #938e8c solid;
+	text-align: right;
+	font-size: 12px;
+	color: #d45d5c;
 }
