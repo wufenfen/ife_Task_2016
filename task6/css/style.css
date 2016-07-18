@@ -83,13 +83,18 @@ h1 {
 	text-transform: capitalize;
 }
 
+h1 p{
+	line-height: 1;
+	margin-bottom: 0.5em;
+}
+
 h2 {
     margin-top: 5px;
     font-weight: normal;
 	font-size: 12px;
 	font-family: 'KaiTi';
 	color: #676767;
-}
+} 
 
 .num {
 	font: 116px/1 '微软雅黑'; 
@@ -177,12 +182,13 @@ p img {
 }
 
 article .image {
-    background: url(../images/2.png) no-repeat;
+    background: url(../images/2.png) no-repeat center;
+    background-size: cover;
 	position: relative;
 	height: 257px;
 }
 
-article p {
+article > p {
 	text-indent: 2em;
 }
 
@@ -191,7 +197,7 @@ h3 {
 	padding-bottom: 10px;
     border-bottom: 2px solid black;
     font-size: 42px;
-    font-family: '黑体';
+    font-family: '黑体', sans-serif;
     word-break: normal; 
     color: #11456b;
 }
@@ -226,22 +232,17 @@ p.first::first-letter {
 
 /****************/
 
-.shadow-bar {
-    height: 61px;
-    width: 100%;	
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-    opacity: 0.7;
-    background-color: grey;
-}
-
 .content-bar {
+    background-color: rgba(100,100,100,0.7); 
+	width: 100%;
     position: absolute;
 	bottom: 0;
 	z-index: 10;
-    margin: 8px 40px;
-    padding: 4px 10px;
+}
+
+.content-bar .text {
+	margin: 8px 0 8px 40px;
+    padding: 5px 0 5px 10px;
 	border-left: 3px solid #72b16a;
 }
 
@@ -285,7 +286,7 @@ p.first::first-letter {
 }
 
 .last .red{
- 	width: 250px;
+ 	width: 230px;
  	background-color: #d65874;
     color: white;
     padding: 30px 10px;
@@ -293,18 +294,19 @@ p.first::first-letter {
 
 .last .desc{
     width: 162px;
-    margin: 16px 12px;
+    margin: 40px 12px;
+    padding: 0 10px;
  }
 
 .red .leftt{
 	font-size: 110px;
 	float: left;
-	padding: 4px;
+	padding: 0 4px;
 	line-height: 130px;
 }
 
 .red .rightt{
- 	width: 160px;
+ 	width: 140px;
  	height: 130px;
  	border-left: 2px solid white;
 	float: left;
@@ -323,6 +325,7 @@ p.first::first-letter {
 	color: #5a5b5b;
 	font-style: italic;
 	position: relative;
+	text-indent: 2em;
 }
 
 .nav .desc span {
@@ -334,7 +337,7 @@ p.first::first-letter {
 
 #start {
     top: -23%;
-    left: -53%;
+    left: -47%;
 }
 
 #end {
