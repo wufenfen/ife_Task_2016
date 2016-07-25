@@ -1,0 +1,135 @@
+body {
+	min-width: 1280px;
+	max-width: 1680px;
+	margin: 0 auto;
+}
+
+header {
+	height: 56px;
+	padding-left: 5%;
+	line-height: 51px;
+    font-family: 微软雅黑;
+}
+
+header .u-logo{
+    background: url('../images/logo.png') left center no-repeat;
+    display: inline-block;
+    width: 45%;
+    padding-left: 40px;
+    font-size: 20px;
+    font-family: 黑体; 
+}
+
+header nav{
+	display: inline-block;
+	width: 42%;
+}
+
+header li{ 
+    display: inline-block; 
+    font-size: 14px; 
+    padding: 0 4%; 
+}
+
+header li.z-active{
+	border-bottom: 5px solid #e74f4d;
+}
+
+header .z-active a{
+	color: #e74f4d;
+}
+
+header .u-login{
+    background: url('../images/login.png') left center no-repeat;
+    width: 6%;
+    display: inline-block;
+    padding-left: 21px; 
+    color: #e74f4d;
+}
+
+
+.g-focus {
+	height: 708px;
+    background: url('../images/focus.jpg') center no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+
+.m-focus{
+	margin-left: 5%;
+	color: white;
+}
+
+.m-focus h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.m-focus p{
+	font-size: 21px;
+    line-height: 33px;
+}
+.m-focus button {
+    width: 70%;
+    margin-top: 60px;
+    border: 0;
+    border-radius: 3px;
+    background-color: #e74f4d; 
+	font-size: 30px;
+    line-height: 64px;
+    color: white;
+}
+
+.g-trait {
+	height: 250px;  
+}
+
+.m-trait {
+	width: 24%;
+	display: inline-block;
+}
+
+.m-trait>:first-child {
+	height: 132px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.m-trait .u-img{
+	background: url('../images/trait.png') no-repeat;
+	height: 44px;
+    width: 44px;
+}
+
+.u-img.u-img-1 {
+	background-position: 0 center;
+}
+
+.u-img.u-img-2 {
+	background-position: -75px center;
+}
+
+.u-img.u-img-3 {
+	background-position: -135px center;
+}
+
+.u-img.u-img-4 {
+	background-position: right center;
+}
+
+.m-trait .u-desc{
+    border-left: 2px solid #908f8f;
+    margin-bottom: 66px;
+    padding: 0 23%;
+    line-height: 20px;
+    font-size: 14px;
+    font-family: '黑体';
+    text-align: center;
+}
+
+
+.u-desc.z-desc {
+    border: none;
+}
