@@ -70,6 +70,7 @@ header .u-login{
 	font-size: 21px;
     line-height: 33px;
 }
+
 .m-focus button {
     width: 70%;
     margin-top: 60px;
@@ -83,6 +84,8 @@ header .u-login{
 
 .g-trait {
 	height: 250px;  
+    display: flex;
+    justify-content: center;
 }
 
 .m-trait {
@@ -122,14 +125,361 @@ header .u-login{
 .m-trait .u-desc{
     border-left: 2px solid #908f8f;
     margin-bottom: 66px;
-    padding: 0 23%;
+    padding: 0 24%;
     line-height: 20px;
     font-size: 14px;
     font-family: '黑体';
     text-align: center;
 }
 
-
 .u-desc.z-desc {
     border: none;
+}
+
+.g-secret {
+    height: 272px;
+    background-color: #ededec;
+    padding-top: 88px;
+}
+
+.m-secret{
+    background: url('../images/bigLogo.png') center top no-repeat;
+    padding-top: 140px;
+    text-align: center;
+    font-size: 54px;
+    font-family: 黑体;
+    color: #999999; 
+}
+
+.g-city{
+	height: 290px;
+	padding-top: 51px;
+	background: url('../images/map.jpg') center no-repeat;
+	background-size: cover;
+}
+
+.m-city {
+	text-align: center;
+	color: white;
+}
+
+.m-city h2{
+    font-size: 21px; 
+    padding-bottom: 9px;	
+}
+
+.u-line{
+	width: 30px;
+	height: 0;
+	border-top: 3px solid white;
+	display: inline-block;
+}
+
+.m-city > p{
+	padding-top: 20px;
+}
+
+.m-city .u-select{
+    margin: 0 10%;
+    padding-top: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.m-select {
+	color: #a8aaaa;
+    display: inline-block;
+    width: 20%;
+    height: 36px;
+    background-color: white;
+    text-align: left; 
+    line-height: 36px;
+    padding-left: 9px;
+} 
+
+.m-select span{
+    width: 25px;
+    height: 100%;
+    float: right;
+    margin-top: 3px;
+    background: url('../images/icon.png') right top no-repeat;
+}
+
+.m-select.z-button { 
+    background-color: #e74f4d;  
+	text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.m-select.z-option {
+    height: 206px;
+    border: 2px solid #bf4f48;
+    position: relative;
+}
+
+.m-select .u-option{
+    height: 170px; 
+    margin-left: -9px;
+    padding-left: 21px;
+    background-color: #e3e2e4; 
+    line-height: 26px;
+    color: #7d7c7c;
+}
+
+.m-select .u-option .z-selected{
+	margin-left: -21px;
+    padding-left: 9px;
+	background-color: #bf4f48;
+	color: white;
+}
+
+.g-pictures{
+	height: 394px;
+	padding: 100px 10% 112px;
+	display: flex;
+    justify-content: space-between;
+	background-color: #f7f7f7;
+}
+
+.m-pictures {
+	width: 20%;
+    text-align: center;
+}
+
+.m-pictures .u-picture{
+    height: 338px;
+    background: url('../images/1.png') center no-repeat; 
+}
+
+.m-pictures .u-picture-2{ 
+    background-image: url('../images/2.png'); 
+}
+
+.m-pictures .u-picture-3{ 
+    background-image: url('../images/3.png'); 
+}
+
+.m-pictures .u-picture-4{ 
+    background-image: url('../images/4.jpg'); 
+}
+
+.m-pictures .u-title{
+	padding: 12px 0;
+	font-size: 16px;
+}
+
+.m-pictures .u-title1{
+	padding: 3px 0 8px;
+	font-size: 21px;
+	letter-spacing: 1em;
+}
+
+.m-pictures .u-desc {
+	color: #a8aaaa;
+	padding-bottom: 8px;
+}
+
+.g-intro {
+	height: 566px;
+	display: flex; 
+}
+
+.m-intro .u-cover{
+	width: 67%;
+	padding-top: 133px;
+	position: relative;
+	background: url('../images/intro.jpg') center no-repeat; 
+	background-size: cover;
+	text-align: center;
+	color: white;
+}
+
+.u-cover p {
+	font-size: 22px;
+	padding-bottom: 22px;
+}
+
+.u-cover p:first-child {
+	font-size: 50px;
+	padding-bottom: 12px;
+}
+
+.u-cover p:nth-child(2) {
+	font-size: 158px;
+	padding-bottom: 38px;
+}
+
+.u-arrow {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border: 24px solid transparent;
+    border-right: 30px solid #fff;
+    transform: translate(0, -50%);
+}
+
+.m-intro .u-intro {
+    width: 21%; 
+    padding: 0 6%;
+    text-align: center;
+}
+
+h3 {
+    padding: 166px 0 31px;
+    font-size: 21px;
+}
+
+h3 span {
+	color: red;
+}
+
+.u-intro p{
+    line-height: 30px;
+    color: #aaaaaa;
+    text-align: left;
+}
+
+.m-intro .u-more{
+    width: 106px;
+    border: 2px solid #e25c60;
+    margin-top: 50px;
+    display: inline-block;
+    line-height: 32px;
+	text-align: center;
+    color: #e25c60;
+}
+
+.g-more{
+	height: 520px;
+	display: flex; 
+	text-align: center;
+}
+
+.m-desc {
+	width: 33.5%;
+	display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.m-desc.z-red {
+	background-color: #e8504e;
+	color: white;
+}
+
+h3 > p {
+	padding-top: 11px; 
+}
+
+.m-more .u-more{ 
+    width: 34%;
+    margin-top: 50px; 
+    border: 2px solid white;
+    display: block;
+    line-height: 42px; 
+    font-size: 21px;
+	text-align: center; 
+    color: white; 
+}
+
+.u-line.z-white{
+	border-color: #abaaaa;
+}
+
+.u-more.z-more{
+	color: #e74f4d;
+    border-color: #e74f4d;
+}
+
+.m-more .u-img{
+	width: 33%;
+	position: relative;
+	background: url('../images/more.jpg') center no-repeat; 
+	background-size: cover;
+}
+
+.u-arrow.z-right{
+    border-left: 30px solid #fff;
+    border-right:none;
+    left: 0;
+}
+
+.g-volun {
+	height: 185px;
+    text-align: center;
+    padding: 0 31%; 
+}
+
+h4{
+	margin-bottom: 9px;
+    margin-top: 120px;
+	font-size: 21px;
+}
+
+
+p.u-desc{
+    line-height: 20px;
+    color: #aaaaaa;
+    margin-top: 15px;
+}
+
+.u-line.z-red{
+	border-color: #e7504d;
+}
+
+footer { 
+	text-align: center;
+	background-color: #32353e;
+	color: white;
+}
+
+.m-footer {
+    padding: 0 32%;
+}
+
+footer .u-contact {
+	padding-top: 92px;
+	font-size: 21px;
+}
+
+footer .u-desc{
+	padding-top: 12px;
+	line-height: 20px;
+}
+
+footer .u-submit {
+    height: 40px;
+    margin: 30px -5% 38px;
+    padding-left: 10px;
+    background-color: white;
+    line-height: 40px;
+    color: #aaa;
+    font-size: 14px;
+    text-align: left;
+}
+
+footer .u-submit span{
+    width: 20%;
+	display: inline-block;
+    float: right;
+    text-align: center;
+    background-color: #6f7178;
+    color: white;
+}
+
+footer .u-icon{
+    width: 184px;
+    height: 26px;
+	background: url('../images/icon.png') no-repeat;
+    display: inline-block;
+    text-align: center;
+}
+
+footer .u-footer{
+    padding: 100px 33px 16px; 
+    display: flex;
+    justify-content: space-between;
 }
