@@ -206,7 +206,7 @@ header .u-login{
 }
 
 .m-select.z-button { 
-    background-color: #e74f4d;  
+    background-color: #be4e48;  
 	text-align: center;
     color: white;
     cursor: pointer;
@@ -350,6 +350,7 @@ h3 span {
     line-height: 32px;
 	text-align: center;
     color: #e25c60;
+    cursor: pointer;
 }
 
 .g-more{
@@ -383,6 +384,7 @@ h3 > p {
     font-size: 21px;
 	text-align: center; 
     color: white; 
+    cursor: pointer;
 }
 
 .u-line.z-white{
