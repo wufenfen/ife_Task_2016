@@ -1,6 +1,5 @@
 body {
-	min-width: 1280px;
-	max-width: 1680px;
+	min-width: 1280px; 
 	margin: 0 auto;
 }
 
@@ -123,6 +122,7 @@ header .u-login{
 }
 
 .m-trait .u-desc{
+	height: 40px;
     border-left: 2px solid #908f8f;
     margin-bottom: 66px;
     padding: 0 24%;
@@ -353,6 +353,26 @@ h3 span {
     cursor: pointer;
 }
 
+.m-intro ul{
+    margin-top: 20px;
+    margin-left: 50%;
+}
+
+.m-intro li{
+	float: left;
+    height: 100%;
+    width: 10px;
+    font-size: 22px;
+    text-align: center;
+    list-style-type: circle;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.m-intro li.z-active{
+    list-style-type: disc;
+}
+
 .g-more{
 	height: 520px;
 	display: flex; 
@@ -412,7 +432,7 @@ h3 > p {
 .g-volun {
 	height: 185px;
     text-align: center;
-    padding: 0 31%; 
+    padding: 0 35%; 
 }
 
 h4{
@@ -421,8 +441,7 @@ h4{
 	font-size: 21px;
 }
 
-
-p.u-desc{
+.m-volun p.u-desc{
     line-height: 20px;
     color: #aaaaaa;
     margin-top: 15px;
@@ -439,7 +458,7 @@ footer {
 }
 
 .m-footer {
-    padding: 0 32%;
+    padding: 0 35%;
 }
 
 footer .u-contact {
