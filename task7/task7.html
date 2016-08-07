@@ -6,11 +6,20 @@
     <title> 新世界——技术官网示例 </title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <script type="text/javascript"> 
+    window.onload = (function(){
+        var options = document.getElementsByTagName('option');
+        options.addEventLister("mouseenter", hover);
+        function hover (e) {
+            e.target.style.backgroundColor = "#bf4f48";
+            e.target.style.color = 'white';
+        }
+    })()
+    </script>
 </head>
 
 <body>
-    <header>
+    <div class="g-head">
     	<div class="u-logo">
     		新世界
     	</div>	
@@ -26,38 +35,30 @@
     	<div class="u-login">
     		登录
     	</div> 
-    </header>
+    </div>
     <div class="g-focus">
     	<div class="m-focus">
     		<h1> Time of new life </h1>
 	    	<p> 新的时代， 年轻的人们让我们一起</p>
-	    	<p> 体验新生活，享受新生活 </p>
+	    	<p class="last"> 体验新生活，享受新生活 </p>
 	    	<button> 开始体验 </button>
     	</div>
     </div>
     <div class="g-trait">
-    	<div class="m-trait">
-    		<div>
-				<div class="u-img u-img-1"></div>
-    		</div>
-    		<div class="u-desc z-desc"> 打造全新世界观，让你更爱你的生活 </div>
+    	<div class="m-trait"> 
+			<div class="u-img z-position-1"></div> 
+    		<div class="u-desc"> 打造全新世界观，让你更爱你的生活 </div>
     	</div>
     	<div class="m-trait">
-    		<div>
-				<div class="u-img u-img-2"></div>
-    		</div>
+			<div class="u-img z-position-2"></div>
     		<div class="u-desc"> 丰富多彩的公益活动，发挥新世界的主人公意识 </div>
     	</div>
     	<div class="m-trait">
-    		<div>
-				<div class="u-img u-img-3"></div>
-    		</div>
+			<div class="u-img z-position-3"></div>
     		<div class="u-desc"> 时尚的新理念，超前体验未知的生活 </div>
     	</div>
     	<div class="m-trait">
-    		<div>
-				<div class="u-img u-img-4"></div>
-    		</div>
+			<div class="u-img z-position-4"></div>
     		<div class="u-desc"> 完善的培养机制，培养你全新的世界观 </div>
     	</div>
     </div>
@@ -66,27 +67,43 @@
     		关于新世界，你不知道的还有什么？
     	</div>
     </div>
-    <div class="g-city">
-    	<div class="m-city">
-    		<h2> 查找新世界城市活动信息 </h2>
-			<div class="u-line"></div>
-    		<p> 每个城市的有不同的活动信息，请自主查询您所需要了解的城市 </p>
-    		<div class="u-select">
-				<div class="m-select"> 中国 <span> </span></div>
-				<div class="m-select z-option"> 省份 <span> </span> 
-					<div class="u-option">
-						<p class="z-selected"> &radic; 北京市 </p>
-						<p> 天津市 </p>
-						<p> 浙江省 </p>
-						<p> 安徽省 </p>
-						<p> 内蒙古自治区 </p>
-						<p> 山东省 </p>
-					</div>
-				</div>
-				<div class="m-select"> 城市 <span> </span></div>
-				<div class="m-select z-button"> 搜索 </div>
-    		</div>
-    	</div>
+     <div class="g-city">
+        <div class="m-city">
+            <h2> 查找新世界城市活动信息 </h2>
+            <div class="u-line"></div>
+            <p> 每个城市的有不同的活动信息，请自主查询您所需要了解的城市 </p>
+            <div class="m-search"> 
+                <div class="m-input">
+                    <div class="u-seleImg"></div>
+                    <select class="m-select">
+                        <option> 中国 </option>
+                        <option> 其他国家 </option>
+                    </select>
+                </div>
+                <div class="m-input">
+                    <div class="u-seleImg"></div>
+                    <select class="m-select"> 
+                        <option> 北京市 </option>
+                        <option> 天津市 </option>
+                        <option> 浙江省 </option>
+                        <option> 安徽省 </option>
+                        <option> 内蒙古自治区 </option>
+                        <option> 山东省 </option> 
+                    </select>
+                </div>
+                <div class="m-input">
+                    <div class="u-seleImg"></div>
+                    <select class="m-select">
+                        <option> 城市 </option>
+                        <option> 杭州 </option>
+                        <option> 北京 </option>
+                    </select>
+                </div>
+                <div class="m-input">
+                    <button class="m-select z-button"> 搜索 </button>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="g-pictures">
     	<div class="m-pictures">

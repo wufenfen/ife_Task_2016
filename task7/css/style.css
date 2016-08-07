@@ -3,14 +3,14 @@ body {
 	margin: 0 auto;
 }
 
-header {
+.g-head {
 	height: 56px;
 	padding-left: 5%;
-	line-height: 51px;
+	line-height: 56px;
     font-family: 微软雅黑;
 }
 
-header .u-logo{
+.g-head .u-logo{
     background: url('../images/logo.png') left center no-repeat;
     display: inline-block;
     width: 45%;
@@ -19,31 +19,40 @@ header .u-logo{
     font-family: 黑体; 
 }
 
-header nav{
+.g-head nav{
 	display: inline-block;
 	width: 42%;
+    vertical-align: top;
 }
 
-header li{ 
+.g-head ul {
+    font-size: 0;
+}
+
+.g-head li{ 
     display: inline-block; 
     font-size: 14px; 
     padding: 0 4%; 
+    line-height: 51px;
+    border-bottom: 5px solid #ffffff;
+    vertical-align: top;
 }
 
-header li.z-active{
-	border-bottom: 5px solid #e74f4d;
+.g-head li.z-active{
+    border-bottom-color: #e74f4d;
 }
 
-header .z-active a{
+.g-head .z-active a{
 	color: #e74f4d;
 }
 
-header .u-login{
+.g-head .u-login{
     background: url('../images/login.png') left center no-repeat;
     width: 6%;
     display: inline-block;
     padding-left: 21px; 
     color: #e74f4d;
+    vertical-align: top;
 }
 
 
@@ -70,9 +79,12 @@ header .u-login{
     line-height: 33px;
 }
 
+.m-focus p.last{
+    margin-bottom: 60px;
+}
+
 .m-focus button {
     width: 70%;
-    margin-top: 60px;
     border: 0;
     border-radius: 3px;
     background-color: #e74f4d; 
@@ -85,46 +97,36 @@ header .u-login{
 	height: 250px;  
     display: flex;
     justify-content: center;
+    font-size: 0;
 }
 
 .m-trait {
-	width: 24%;
+	width: 25%;
 	display: inline-block;
 }
-
-.m-trait>:first-child {
-	height: 132px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
+ 
 .m-trait .u-img{
-	background: url('../images/trait.png') no-repeat;
-	height: 44px;
+    height: 132px; 
     width: 44px;
-}
+    margin: 0 auto; 
+    background: url('../images/trait.png') left center no-repeat;
+} 
 
-.u-img.u-img-1 {
-	background-position: 0 center;
-}
-
-.u-img.u-img-2 {
+.u-img.z-position-2 {
 	background-position: -75px center;
 }
 
-.u-img.u-img-3 {
+.u-img.z-position-3 {
 	background-position: -135px center;
 }
 
-.u-img.u-img-4 {
+.u-img.z-position-4 {
 	background-position: right center;
 }
 
 .m-trait .u-desc{
 	height: 40px;
     border-left: 2px solid #908f8f;
-    margin-bottom: 66px;
     padding: 0 24%;
     line-height: 20px;
     font-size: 14px;
@@ -132,40 +134,43 @@ header .u-login{
     text-align: center;
 }
 
-.u-desc.z-desc {
+.m-trait .z-position-1 + .u-desc{
     border: none;
 }
 
 .g-secret {
-    height: 272px;
+    height: 360px;
+    background: url('../images/bigLogo.png') center 88px no-repeat;
     background-color: #ededec;
-    padding-top: 88px;
 }
 
 .m-secret{
-    background: url('../images/bigLogo.png') center top no-repeat;
-    padding-top: 140px;
+    padding-top: 228px;
     text-align: center;
     font-size: 54px;
     font-family: 黑体;
-    color: #999999; 
+    color: #999999;
 }
 
 .g-city{
-	height: 290px;
-	padding-top: 51px;
-	background: url('../images/map.jpg') center no-repeat;
-	background-size: cover;
+    height: 341px;
+    background: url('../images/map.jpg') center no-repeat;
+    background-size: cover;
 }
 
 .m-city {
+	padding-top: 51px;
 	text-align: center;
 	color: white;
+    font-size: 0;
 }
 
+.m-city *{
+    font-size: 14px;
+}
 .m-city h2{
     font-size: 21px; 
-    padding-bottom: 9px;	
+    padding-bottom: 16px;	
 }
 
 .u-line{
@@ -179,60 +184,56 @@ header .u-login{
 	padding-top: 20px;
 }
 
-.m-city .u-select{
-    margin: 0 10%;
-    padding-top: 52px;
-    display: flex;
-    justify-content: space-between;
+.m-city .m-search{
+    margin: 52px 10% 0;
+    font-size: 0;
 }
 
-.m-select {
-	color: #a8aaaa;
+.m-search .m-input{
     display: inline-block;
     width: 20%;
-    height: 36px;
-    background-color: white;
-    text-align: left; 
-    line-height: 36px;
-    padding-left: 9px;
-} 
-
-.m-select span{
-    width: 25px;
-    height: 100%;
-    float: right;
-    margin-top: 3px;
-    background: url('../images/icon.png') right top no-repeat;
-}
-
-.m-select.z-button { 
-    background-color: #be4e48;  
-	text-align: center;
-    color: white;
-    cursor: pointer;
-}
-
-.m-select.z-option {
-    height: 206px;
-    border: 2px solid #bf4f48;
+    margin-left: 5%;
     position: relative;
 }
 
-.m-select .u-option{
-    height: 170px; 
-    margin-left: -9px;
-    padding-left: 21px;
+.m-search .m-input:first-child {
+    margin-left: 0;
+}
+
+.m-search .u-seleImg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 36px;
+    background: url('../images/mail.png') center no-repeat;
+}
+
+.m-select {
+    width: 100%;
+    height: 36px;
+    padding-left: 9px;
+    color: #a8aaaa;
+} 
+
+.m-select:active .m-input{
+    border: 2px solid #bf4f48; /**这个怎么写 要写js吗**/
+}
+
+.z-button { 
+    padding-left: 0;
+    background-color: #be4e48;  
+    color: white;   
+    border: 0;
+}
+
+option {
     background-color: #e3e2e4; 
     line-height: 26px;
     color: #7d7c7c;
-}
+} 
 
-.m-select .u-option .z-selected{
-	margin-left: -21px;
-    padding-left: 9px;
-	background-color: #bf4f48;
-	color: white;
-}
+/*****************************/
 
 .g-pictures{
 	height: 394px;
