@@ -4,19 +4,23 @@
 <head>
     <meta charset="utf-8">
     <title> 报纸排版页面 </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="container">
         <div class="top">
-            <div class="red"> </div>
-            <div class="left"> ife.baidu.com </div>
-            <div class="right"> 2016.03 </div>
+            <div class="source"> ife.baidu.com </div> 
+            <div> 2016.03 </div>
         </div>
         <header>
+            <div class="bgImg">
+	            <div class="shadow shadow-left"> </div>
+	            <div class="shadow shadow-right"> </div>
+            </div>
             <div class="intro">
-                <h1> about <br/> technologe </h1>
+                <h1> <p>about</p> <p>technologe</p> </h1>
                 <h2> When I do well in the exam, I will show my paper </h2>
                 <div class="num"> 700 </div>
                 <div>
@@ -26,34 +30,38 @@
                     	<div class="desc num3">  csscssccsssccss</div>
                     </div>		
                 </div>
-            </div>
-            <img src="images/1.png" alt="大图" width="641" height="301">
-            <div class="shadow shadow-left"> </div>
-            <div class="shadow shadow-right"> </div>
+            </div> 
         </header>
         <nav>
         	<div class="left">	
 				<div class="title">	 What </div>
-				<p class="content">	fdjkdfjdfdkfdjkfjkdfjdfkdjkfdjkjfdjkdfjdfdkfdjkfjkdfjdfkdjkfdjkjfdjkdfjdfdkfdjkfjkdfjdfkdjkfdjkjfdjkdfjdfdkfdjkfjkdfjdfkdjkfdjkjfdjkdfjdfdkfdjkfjkdfjdfkdjkfdjkjfdjkdfjdfdkfdjkfjkdfjdfkdjkfdjkjfdjkdfjdfdkfdjkfjkdfjdfkdjkfdjkj </p>
+				<p class="content">	1.右键文件-打开方式-选择需要的打开方式，这是最简单的...
+2.打开控制面板-程序-始终使用指定的程序打开某种类型文...
+3.找到需要设置的文件类型-更改程序-选择默认关联打开方...    
+3.找到需要设置的文件类型-更改程序-选择默认关联打开方... </p>
+        	</div>
+        	<div class="middle">
+        		<div class="title when"> When </div>
+				<p class="content">	1.右键文件-打开方式-选择需要的打开方式，这是最简单的...
+2.打开控制面板-程序-始终使用指定的程序打开某种类型文...
+3.找到需要设置的文件类型-更改程序-选择默认关联打开方... 
+3.找到需要设置的文件类型-更改程序-选择默认关联打开方... </p>
         	</div>
         	<div class="right">
         		<div class="title how"> How </div>
-				<p class="content">	fdjkdfjdfdkfdjkfjkdfjdfkdjkfdjkjfdjkdfjdfdkfdjkfjkdfjdffdssdsdsdsdsdsdsd</p>
-				<div>
+				<p class="content">	1.右键文件-打开方式-选择需要的打开方式，这是最简单的...
+2.打开控制面板-程序-始终使用指定的程 .</p>
+				<div class="list">
 					<p> What ---------- <span> 40%</span></p>
 					<p> What ---------- <span> 30%</span></p>
 					<p> What ---------- <span> 40%</span></p>
 				</div>
         	</div>
-        	<div class="middle">
-        		<div class="title when"> When </div>
-				<p class="content">	fdjkdfjdfdkfdjkfjkdfjdfkdjkfdjkjfdjkdfjdfdkfdjkfjkdfjdfkdjkfdjkjfdjkdfjdfdkfdjkfjkdfjdfkdjkfdjkjfdjkdfjdfdkfdjkfjkdfjdfkdjkfdjkjfdjkdfjdfdkfdjkfjkdfjdfkdjkfdjkjfjkdfjdfkdjkfdjkjfdjkdfjdfdkfdjkfjkdfjdfkdjkfdjkjfdjkdfjdfdkfdjkfjkdfjdfkdjkfdjkj </p>
-        	</div>
         </nav>
         <main>
             <article class="left">
-                <h3> <span> THE </span> TECHONLOGE OF FRONT <br/>
-                <span> 前端技术领域</span> </h3>
+                <h3> <span> THE </span> TECHONLOGE OF FRONT 
+                <p> 前端技术领域</p> </h3>
                
                 <p class="content first">前his is some text. This is some text.
 				This is some text. This is some text. This is some text.
@@ -62,8 +70,7 @@
 				This is some text.  his is some text. This is some text.
 				This is some text. This is some text. This e text.
 				This is some text. This is some text. This is me text.
-				This is some text. This<img src="images/3.jpg" alt="文章图片" class="surround"> some text.This is some text. This is sois some text. This is some text.
-				This is some text. This is some text. This is some text.
+				This is some text. This <img src="images/3.jpg" alt="文章图片" class="surround"> some text.This is some text. This is sois some text. This is some text.
 				This is some text. This is some text. This is some text.
 				This is some text. This is some text. This is some text.
 				This is some text. This is some text. This is some text.
@@ -72,46 +79,43 @@
                 <p class="content">This is some text. This is some text.
 				This is some text. This is some text. This is some text.
 				This is some text. This is some text. This is some text.
-				This is some text. This is some text. This is some text.
-				This is some text. This is some text. This is some text.
-				This is some text. This is some text. This is some text.
-				This is some text. This is some text. This is some text.This is some text. This is some text.
+				This is some text. This is some text. This is some text. s some text. This is some text.
 				This is some text. This is some text. This is some text.
 				This text. This is some text. This is some text.
-				This is some text. This is some text. This is some text. This is some text.
-				This is some text. This is some text. This is some text.
-				This is some text. This is some text. This is some text.
+				This is some text. This is some text. This is some text. This is some text.s</p>
+				<p class="content"> This is some text. This is so me text.
 				This is some text. This is some text. This is some text.
 				</p>
             </article>
             <article class="right">
-            	<div class="image"> 
-	                <img src="images/2.png" alt="电脑屏幕" width="458" height="275">
-	                <div class="shadow-bar">
-	                </div>
+            	<div class="image">  
 					<div class="content-bar">
-						<span class="big"> 前端技术 </span>
-						<span class="small"> 前端技术前端技术 </span>
+						<div class="text"> 
+							<span class="big"> 前端技术 </span>
+							<span class="small"> 前端技术前端技术 </span>
+						</div>
 					</div>
 				</div>
 				<div class="nav">
 					<div class="item">
 						<ul>
-							<li>前端地方uyuy的健............<i>前端</i></li>
-							<li>前端地方的健hgghh.........<i>前端ss</i></li>
-							<li>前端地方的jhjh健............<i>前端</i></li>
+							<li>前端地方uyuy的健.................<i>前端</i></li>
+							<li>前端地方的健hgghh.............<i>前端ss</i></li>
+							<li>前端地方的jhjh健................<i>前端</i></li>
 						</ul>
 					</div>
 					<div class="last">
 						<div class="red">
 							<div class="leftt">0</div>
 							<div class="rightt">
-								<div class="big">ONE TWO THREE FORE</div>
+								<div class="big">ONE TWO THREE FOUR </div>
 								<div class="small">hefe fek fejk fejk fej jkf fejkfe </div>
 							</div>
 						</div>
 						<div class="desc">
-							<p><span id="start">“</span>hefed dfkjd fdjk fdfd jkjfd jdkj fjd wo fd jief kjie<span id="end">”</span> </p>
+							<p><span id="start">“</span>hefed dfkjd fdjk fdfd jkjfd jis is some text.
+				This is some text. Tdkj fjd wo fd jief kis is some text.
+				This is some text. Tjie<span id="end">”</span> </p>
 						</div>
 					</div>
 
