@@ -38,11 +38,11 @@ body {
     vertical-align: top;
 }
 
-.g-head li.z-active{
+.g-head li:hover{
     border-bottom-color: #e74f4d;
 }
 
-.g-head .z-active a{
+.g-head li:hover a{
 	color: #e74f4d;
 }
 
@@ -481,18 +481,23 @@ h4{
 .g-footer .u-submit {
     width: 40%;
     margin: 30px auto 38px;
-    padding-left: 10px;
-    background-color: white;
-    line-height: 40px;
-    color: #aaa;
-    font-size: 14px;
     text-align: left;
 }
 
-.g-footer .u-submit span{
-    width: 20%; 
+.g-footer .u-text {
+    width: 78%; 
+    height: 40px;
+    border: 0;
+    padding-left: 2%; 
+    color: #aaa;
+    font-size: 14px; 
+}
+
+.g-footer .u-submit button{
+    width: 20%;
+    height: 40px;
+    border: 0;
     float: right;
-    text-align: center;
     background-color: #6f7178;
     color: white;
 }
