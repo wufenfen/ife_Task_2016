@@ -10,4 +10,4 @@
 | [任务四](http://ife.baidu.com/task/detail?taskId=4) | [定位和居中](http://wufenfen.github.io/ife_Task_2016/task4/task4.html)| 
 | [任务六](http://ife.baidu.com/task/detail?taskId=6) |  [报纸排版页面](http://wufenfen.github.io/ife_Task_2016/task6/task6.html)| 
 | [任务七](http://ife.baidu.com/task/detail?taskId=7) |  [技术官网-示例](http://wufenfen.github.io/ife_Task_2016/task7/task7.html)| 
- 
+| [任务八](http://ife.baidu.com/task/detail?taskId=8) |  [栅格系统](http://wufenfen.github.io/ife_Task_2016/task8/task8.html)| 
