@@ -1,0 +1,170 @@
+html, body {
+    height: 100%;
+}
+
+body{   
+    min-width: 1280px;
+    overflow: auto;
+}
+
+.g-header{
+    height: 56px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #2189bf;
+    color: #fff;
+}
+
+.m-header{
+    width: 1280px;
+    height: 100%;
+    position: relative; 
+    margin: 0 auto;
+    padding:10px 0;
+    box-sizing: border-box;
+}
+
+.m-header .u-logo{ 
+    position: relative;
+    left: 50px; 
+    width: 36px;
+    height: 36px;
+    float: left;
+    background-color: #fff;
+}
+
+.u-logo .bigRec {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #2189bf;
+}
+
+.u-logo .smRec {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+}
+
+.m-header .u-addon{
+    position: absolute;
+    right: 118px;
+    display: flex;
+    align-items: center;
+}
+
+.u-addon .u-search{ 
+    height: 28px;
+    width: 280px;
+    border-radius: 14px;
+    border: 0;
+    margin-right: 30px;
+    padding-left: 38px;
+} 
+
+.u-addon .fa{
+    line-height: 36px;
+}
+
+.u-addon .fa-search {
+    position: absolute;
+    left: 17px;
+    color: #cbcbcb;
+    line-height: 16px;
+    font-size: 18px;
+}
+
+.g-body{
+    width: 1280px;
+    height: 800px;
+    margin: 56px auto 0;
+}
+
+.g-side{
+    float: left;
+    width: 260px;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #383d4e;
+    color: #fff;
+    font-size: 16px;
+}
+
+.m-user{
+    padding-left: 56px; 
+    padding-top: 30px;
+}
+
+.m-user .u-user{
+    margin-bottom: 34px;
+    display: flex;
+    align-items: center;
+}
+
+.m-user .u-name{ 
+    margin-left: 26px;
+}
+
+.m-user .u-avastar{
+    width: 54px;
+    height: 54px;
+    display: inline-block;
+    border-radius: 33px;
+    background-color: #fff; 
+    box-shadow: 0 0 0 6px #383d4e,0 0 0 10px #fff;
+}
+
+.m-user .u-info{
+    padding-bottom: 20px;
+}
+
+.m-user .u-info span{
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 1.2em;
+}
+
+.m-nav {
+    padding-left: 56px; 
+}
+
+.m-nav a {
+    color: white;
+}
+
+.m-nav > ul{
+    padding: 15px 0;
+}
+
+.m-nav .u-list{
+    padding-top: 30px; 
+}
+
+.m-nav .u-list:first-child {
+    padding-top: 0;
+}
+
+.m-nav .u-list i{
+    padding-right: 5px;
+}
+
+.m-nav .u-secList{
+    text-indent: 1em;
+}
+
+.m-nav .u-secList li{
+    padding-top: 15px;
+}
+
+.g-main{
+    background-color: #eeeded;
+    margin-left: 260px;
+    height: 100%; 
+}
