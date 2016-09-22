@@ -19,7 +19,9 @@
             <div class="u-addon">
                 <i class="fa fa-search"></i>
                 <input type="text" class="u-search">
-                <i class="fa fa-user fa-2x"></i>
+                <div> 
+                    <i class="fa fa-user fa-2x"></i> 登录
+                </div>
             </div>
         </div>
     </header>
@@ -43,22 +45,22 @@
                     <li class="u-list">
                         <a href="javascript:void(0)"> <i class="fa fa-calculator"> 个人报表</i></a>
                         <ul class="u-secList">
-                            <li>
-                                <a href="javascript:void(0)"> <i class="fa fa-folder-o"> </i>文件一</a>
+                            <li>  
+                                <a href="javascript:void(0)"><i class="fa fa-chevron-right chevron"></i><i class="fa fa-folder-o"></i>文件一</a>
                             </li>
-                            <li>
-                                <a href="javascript:void(0)"> <i class="fa fa-folder-o"> </i>文件二</a>
+                            <li> 
+                                <a href="javascript:void(0)"><i class="fa fa-chevron-down chevron"></i><i class="fa fa-folder-o"></i>文件二</a>
                                 <ul>
                                     <li>
-                                        <a href="javascript:void(0)"> <i class="fa fa-file-o"> </i>文档1</a>
+                                        <a href="javascript:void(0)"><i class="fa fa-file-o"></i>文档1</a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0)"> <i class="fa fa-file-o"> </i>文档2</a>
+                                        <a href="javascript:void(0)"><i class="fa fa-file-o"></i>文档2</a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="javascript:void(0)"> <i class="fa fa-folder-o"> </i>文件三</a>
+                                <a href="javascript:void(0)"><i class="fa fa-chevron-right chevron"></i><i class="fa fa-folder-o"></i>文件三</a>
                             </li>
                         </ul>
                     </li>
@@ -82,7 +84,71 @@
             <div class="nav"></div>
         </div>
         <div class="g-main">
-            fdfdffdfd
+            <div class="breadCrumbs">
+                <ul>
+                    <li> <a href="">C站</a> </li>
+                    <li>  <a href="">个人报表</a> </li>
+                    <li>  <a href="">文件一 </a></li>
+                    <li>  <a href="">文档一</a> </li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="m-query">
+                    <div> 
+                        <label for="">查询项</label> 
+                        <select name="" id="">
+                            <option value="1"> 第一项 </option>
+                            <option value="2"> 第二项 </option>
+                            <option value="3"> 第三项 </option>
+                        </select>
+                    </div>
+                    <div>
+                        <div class="selectUp"> 
+                            <label for="">买方</label> 
+                            <select class="longSelect">
+                                <option value="1"> 小A </option>
+                                <option value="2"> 小B </option>
+                                <option value="3"> 小C </option>
+                            </select>
+                        </div> 
+                        <div> 
+                            <label for="">卖方</label> 
+                            <select class="longSelect">
+                                <option value="1"> 小A </option>
+                                <option value="2"> 小B </option>
+                                <option value="3" selected=""> 小C </option>
+                            </select>
+                        </div>  
+                    </div>
+                    <div>
+                        <div class="selectUp">
+                            <label for="">日期</label> 
+                            <input type="text" value="2016-09-12" class="longSelect">
+                            <label for="" class="labelGap"> 总耗时 </label>
+                            <select>
+                                <option value="1"> 8天 </option>
+                                <option value="2"> 10天 </option> 
+                            </select> 
+                        </div>
+                        <div>
+                            <label for=""> 人数 </label>
+                            <select>
+                                <option value="1"> 8天 </option>
+                                <option value="2"> 10天 </option> 
+                            </select> 
+                            <label for="" class="labelGap"> 成交项 </label>
+                            <select class="longSelect">
+                                <option value="1"> 10项 </option>
+                                <option value="2"> 12项 </option> 
+                            </select> 
+                        </div>
+                    </div>
+                    <div> 
+                        <button> 搜索 </button>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

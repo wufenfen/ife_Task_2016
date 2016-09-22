@@ -151,8 +151,8 @@ body{
     padding-top: 0;
 }
 
-.m-nav .u-list i{
-    padding-right: 5px;
+.m-nav .u-list  i{
+    padding-right: 15px;
 }
 
 .m-nav .u-secList{
@@ -163,8 +163,80 @@ body{
     padding-top: 15px;
 }
 
+.u-secList li li{
+    padding-left: 30px;
+}
+
+.chevron {
+    padding-right: 0!important;
+}
+
 .g-main{
     background-color: #eeeded;
     margin-left: 260px;
     height: 100%; 
+}
+
+.breadCrumbs {
+    line-height: 30px;
+    background-color: white;
+}
+
+.breadCrumbs ul{
+    padding-left: 30px;
+}
+
+.breadCrumbs li{
+    display: inline-block;
+}
+
+.breadCrumbs li:not(:first-child):before{
+    content: '/'
+}
+
+.breadCrumbs a{
+    color: #b8b5b5;
+    padding: 0 5px;
+}
+
+.breadCrumbs a:hover{
+    color: #2189bf;
+}
+
+.container {
+    padding: 20px 40px 0;
+}
+
+.m-query {
+    background-color: white;
+    padding: 10px 25px;
+}
+
+.m-query > div{
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.m-query > div:first-child{
+    vertical-align: top;
+}
+
+.m-query label{
+    padding-right: 10px;
+}
+
+.m-query select, .m-query input{
+    padding: 2px 8px;
+}
+
+div.selectUp {
+    padding-bottom: 10px;
+}
+
+.longSelect {
+    width: 120px;
+}
+
+.labelGap {
+    padding-left: 10px;
 }
